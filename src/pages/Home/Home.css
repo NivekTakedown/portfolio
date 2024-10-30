@@ -1,0 +1,34 @@
+.Home main {
+    padding: 2rem;
+}
+
+.Home h1,
+.Home h2,
+.Home h3,
+.Home h4,
+.Home h5,
+.Home h6 {
+    color: #ff00ff; /* Color vibrante */
+    text-shadow: 0 0 5px #ff00ff; /* Efecto de neón */
+}
+
+.Home p,
+.Home ul,
+.Home ol {
+    color: #f0f0f0; /* Texto claro */
+}
+
+.Home a {
+    color: #61dafb;
+    text-decoration: none;
+}
+
+.Home a:hover {
+    text-shadow: 0 0 5px #61dafb; /* Efecto de neón */
+}
+.Home main {
+    padding: 2rem;
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido */
+    text-align: left; /* Alinear el texto a la izquierda */
+}

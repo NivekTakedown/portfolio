@@ -1,0 +1,11 @@
+.Footer {
+    background-color: #282c34;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 5px solid #61dafb; /* Línea de neón */
+    font-family: "Press Start 2P", cursive; /* Fuente retro */
+}
