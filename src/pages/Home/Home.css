@@ -1,0 +1,32 @@
+.Home main {
+    padding: 2rem;
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido */
+    text-align: left; /* Alinear el texto a la izquierda */
+    margin-bottom: 5%; /* Espacio adicional para el footer */
+}
+
+.Home h1,
+.Home h2,
+.Home h3,
+.Home h4,
+.Home h5,
+.Home h6 {
+    color: #ffcc00; /* Color más serio y retro */
+    text-shadow: none; /* Sin efecto de neón */
+}
+
+.Home p,
+.Home ul,
+.Home ol {
+    color: #e0e0e0; /* Texto claro */
+}
+
+.Home a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.Home a:hover {
+    text-shadow: none; /* Sin efecto de neón */
+}

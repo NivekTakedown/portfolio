@@ -1,0 +1,21 @@
+.ProjectCard {
+    border: 1px solid #444; /* Borde más serio */
+    padding: 1rem;
+    margin: 1rem;
+    text-align: left;
+    background-color: #2c2c2c; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto claro */
+    font-family: "Georgia", serif; /* Fuente más seria y retro */
+}
+
+.ProjectCard h2 {
+    margin-top: 0;
+    color: #ffcc00; /* Color más serio y retro */
+    text-shadow: none; /* Sin efecto de neón */
+}
+
+.ProjectCard a {
+    color: #ffcc00; /* Color más serio y retro */
+    text-decoration: none;
+    text-shadow: none; /* Sin efecto de neón */
+}

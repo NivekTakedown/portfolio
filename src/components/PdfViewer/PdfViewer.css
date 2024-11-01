@@ -1,0 +1,16 @@
+.PdfViewer {
+    border: 1px solid #444; /* Borde más serio */
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #1a1a1a; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto claro */
+    font-family: "Georgia", serif; /* Fuente más seria y retro */
+    text-align: center;
+}
+
+.PdfViewer iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    margin-top: 1rem;
+}

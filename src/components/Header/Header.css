@@ -1,0 +1,27 @@
+.Header {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 5px solid #444; /* Línea más seria */
+    font-family: "Georgia", serif; /* Fuente más seria y retro */
+}
+
+.Header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.Header nav ul li {
+    margin: 0 1.5rem; /* Más espacio entre los elementos */
+}
+
+.Header nav ul li a {
+    color: #ffcc00; /* Color más serio y retro */
+    text-decoration: none;
+    text-shadow: none; /* Sin efecto de neón */
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+}
