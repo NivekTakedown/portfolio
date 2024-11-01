@@ -1,13 +1,12 @@
 import React from "react";
 import "./Footer.css";
+import { Image } from "react-bootstrap";
+import githubLogo from "../../assets/github-logo.png"; // Ruta a tu logo de GitHub
+import linkedinLogo from "../../assets/linkedin-logo.png"; // Ruta a tu logo de LinkedIn
 
 function Footer() {
   return (
     <footer className="Footer">
-      <p>
-        Contact me at:{" "}
-        <a href="mailto:your.email@example.com">your.email@example.com</a>
-      </p>
       <p>
         Follow me on:
         <a
@@ -15,16 +14,16 @@ function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          {" "}
+          <Image src={linkedinLogo} alt="LinkedIn Logo" className="logo" />
           LinkedIn
-        </a>{" "}
+        </a>
         |
         <a
           href="https://github.com/yourprofile"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {" "}
+          <Image src={githubLogo} alt="GitHub Logo" className="logo" />
           GitHub
         </a>
       </p>

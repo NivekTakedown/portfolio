@@ -1,4 +1,4 @@
-Footer {
+.Footer {
     background-color: #1a1a1a;
     color: #e0e0e0;
     text-align: center;
@@ -8,4 +8,12 @@ Footer {
     bottom: 0;
     border-top: 5px solid #444; /* Línea más seria */
     font-family: "Georgia", serif; /* Fuente más seria y retro */
+}
+
+.logo {
+    width: 24px; /* Ajusta el tamaño según sea necesario */
+    margin: 0 10px;
+    vertical-align: middle;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(60deg)
+        brightness(100%) contrast(100%);
 }
