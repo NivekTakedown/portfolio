@@ -1,5 +1,9 @@
 .Home main {
     padding: 2rem;
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido */
+    text-align: left; /* Alinear el texto a la izquierda */
+    margin-bottom: 4rem; /* Espacio adicional para el footer */
 }
 
 .Home h1,
@@ -25,10 +29,4 @@
 
 .Home a:hover {
     text-shadow: 0 0 5px #61dafb; /* Efecto de neón */
-}
-.Home main {
-    padding: 2rem;
-    max-width: 800px; /* Ancho máximo del contenido */
-    margin: 0 auto; /* Centrar el contenido */
-    text-align: left; /* Alinear el texto a la izquierda */
 }

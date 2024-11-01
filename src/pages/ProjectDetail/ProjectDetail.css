@@ -3,6 +3,7 @@
     max-width: 800px; /* Ancho máximo del contenido */
     margin: 0 auto; /* Centrar el contenido */
     text-align: left; /* Alinear el texto a la izquierda */
+    margin-bottom: 4rem; /* Espacio adicional para el footer */
 }
 
 .ProjectDetail h1,

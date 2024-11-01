@@ -11,12 +11,20 @@ function Home() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
+    // Fetch the content of home.md
     fetch("/home.md")
       .then((response) => response.text())
       .then((text) => {
         const { modifiedContent, parsedProjects } = parseProjects(text);
         setContent(modifiedContent);
         setProjects(parsedProjects);
+      });
+
+    // Fetch the list of projects from projects.json
+    fetch("/projects.json")
+      .then((response) => response.json())
+      .then((data) => {
+        setProjects(data);
       });
   }, []);
 
@@ -53,7 +61,9 @@ function Home() {
                         key={index}
                         title={project.title}
                         description={project.description}
-                        link={project.link}
+                        repoLink={project["repo-link"]}
+                        previewLink={project["preview-link"]}
+                        link={`/projects/${project.name}`}
                       />
                     ))}
                   </section>
