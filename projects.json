@@ -1,0 +1,23 @@
+[
+  {
+    "name": "HTML-to-JSON-Blocks-Library",
+    "title": "HTML to JSON Blocks Library",
+    "repo-link": "https://github.com/NivekTakedown/html-to-json-blocks",
+    "preview-link": "https://pypi.org/project/html-to-json-blocks/",
+    "description": "Developed a Python library to convert HTML content into structured JSON blocks. Implemented a modular design with custom image handling capabilities."
+  },
+  {
+    "name": "marvel-comic-keeper",
+    "title": "Marvel Comic Keeper",
+    "repo-link": "https://example.com/marvel-comic-keeper",
+    "preview-link": "https://example.com/marvel-comic-keeper",
+    "description": "Marvel Comic Keeper is an application that seamlessly connects to the Marvel API. Users can create accounts, explore Marvel comics, and effortlessly manage their favorites. Built with Express.js and React, along with MySQL for the database, it delivers a seamless and interactive user experience. Deployment is handled by Netlify for the frontend and Railway for the backend and database."
+  },
+  {
+    "name": "EasyCoffee",
+    "title": "EasyCoffee",
+    "repo-link": "https://github.com/NivekTakedown/marvel",
+    "preview-link": "https://marvelcomickeeper.netlify.app/",
+    "description": "The Easy Coffee App streamlines coffee plantation management for owners and workers. It facilitates registration of farm details, tracks production and sales, monitors inventory, records daily progress, and offers geospatial lot maps. This project was developed in collaboration with three other team members."
+  }
+]
