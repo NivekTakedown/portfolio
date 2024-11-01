@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import "./ProjectDetail.css";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -31,7 +33,7 @@ function ProjectDetail() {
   const parseContent = (markdown) => {
     const previewRegex = /## Preview\s*\n\s*\[.*?\]\((.*?)\)/;
     const repoRegex = /## Repository\s*\n\s*\[.*?\]\((.*?)\)/;
-    const pdfRegex = /## PDF Manual\s*\n\s*\[(.*?)\]\((.*?)\)/g;
+    const pdfRegex = /\[(.*?)\]\((.*?\.pdf)\)/g;
     const previewMatch = markdown.match(previewRegex);
     const repoMatch = markdown.match(repoRegex);
     const pdfMatches = [...markdown.matchAll(pdfRegex)];
@@ -55,7 +57,28 @@ function ProjectDetail() {
     <div className="ProjectDetail">
       <Header />
       <main>
-        <ReactMarkdown children={content} remarkPlugins={[remarkGfm]} />
+        <ReactMarkdown
+          children={content}
+          remarkPlugins={[remarkGfm]}
+          components={{
+            code({ node, inline, className, children, ...props }) {
+              const match = /language-(\w+)/.exec(className || "");
+              return !inline && match ? (
+                <SyntaxHighlighter
+                  children={String(children).replace(/\n$/, "")}
+                  style={dark}
+                  language={match[1]}
+                  PreTag="div"
+                  {...props}
+                />
+              ) : (
+                <code className={className} {...props}>
+                  {children}
+                </code>
+              );
+            },
+          }}
+        />
         {repoLink && (
           <a href={repoLink} target="_blank" rel="noopener noreferrer">
             View Repository

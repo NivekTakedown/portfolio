@@ -1,11 +1,11 @@
-.Footer {
-    background-color: #282c34;
-    color: #f0f0f0;
+Footer {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem 1rem; /* 2rem arriba y abajo, 1rem a los lados */
     position: fixed;
     width: 100%;
     bottom: 0;
-    border-top: 5px solid #61dafb; /* Línea de neón */
-    font-family: "Press Start 2P", cursive; /* Fuente retro */
+    border-top: 5px solid #444; /* Línea más seria */
+    font-family: "Georgia", serif; /* Fuente más seria y retro */
 }

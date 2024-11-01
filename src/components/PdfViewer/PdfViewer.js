@@ -4,7 +4,7 @@ import "./PdfViewer.css";
 function PdfViewer({ manuals = [] }) {
   return (
     <div className="PdfViewer">
-      <h2>PDF Manuals</h2>
+      <h2>PDF Reader</h2>
       {manuals.length === 0 ? (
         <p>No manuals available.</p>
       ) : (

@@ -1,8 +1,8 @@
 body {
     margin: 0;
-    font-family: "Press Start 2P", cursive; /* Fuente retro */
+    font-family: "Courier New", serif; /* Fuente más seria y retro */
     background-color: #1a1a1a; /* Fondo oscuro */
-    color: #f0f0f0; /* Texto claro */
+    color: #e0e0e0; /* Texto claro */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +10,8 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
+}
+
+main {
+    margin-bottom: 4rem; /* Espacio adicional para el footer */
 }

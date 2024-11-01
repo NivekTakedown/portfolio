@@ -7,7 +7,7 @@
     "description": "Developed a Python library to convert HTML content into structured JSON blocks. Implemented a modular design with custom image handling capabilities."
   },
   {
-    "name": "Marvel-Comic-Keeper",
+    "name": "marvel-comic-keeper",
     "title": "Marvel Comic Keeper",
     "repo-link": "https://example.com/marvel-comic-keeper",
     "preview-link": "https://example.com/marvel-comic-keeper",
@@ -16,8 +16,8 @@
   {
     "name": "EasyCoffee",
     "title": "EasyCoffee",
-    "repo-link": "https://example.com/easy-coffee",
-    "preview-link": "https://example.com/easy-coffee",
+    "repo-link": "https://github.com/NivekTakedown/marvel",
+    "preview-link": "https://marvelcomickeeper.netlify.app/",
     "description": "The Easy Coffee App streamlines coffee plantation management for owners and workers. It facilitates registration of farm details, tracks production and sales, monitors inventory, records daily progress, and offers geospatial lot maps. This project was developed in collaboration with three other team members."
   }
 ]

@@ -1,14 +1,13 @@
 .App {
     text-align: center;
-    background-color: #1a1a1a; /* Fondo oscuro */
-    color: #f0f0f0; /* Texto claro */
-    font-family: "Press Start 2P", cursive; /* Fuente retro */
+    background-color: #2c2c2c; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto claro */
+    font-family: "Georgia", serif; /* Fuente más seria y retro */
 }
 
 .App-logo {
     height: 40vmin;
     pointer-events: none;
-    filter: drop-shadow(0 0 10px #61dafb); /* Efecto de neón */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -18,20 +17,20 @@
 }
 
 .App-header {
-    background-color: #282c34;
+    background-color: #1a1a1a;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: #f0f0f0;
-    border-bottom: 5px solid #61dafb; /* Línea de neón */
+    color: #e0e0e0;
+    border-bottom: 5px solid #444; /* Línea más seria */
 }
 
 .App-link {
-    color: #ff00ff; /* Color vibrante */
-    text-shadow: 0 0 5px #ff00ff; /* Efecto de neón */
+    color: #ffcc00; /* Color más serio y retro */
+    text-shadow: none; /* Sin efecto de neón */
 }
 
 @keyframes App-logo-spin {

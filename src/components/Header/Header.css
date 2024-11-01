@@ -1,10 +1,10 @@
 .Header {
-    background-color: #282c34;
-    color: #f0f0f0;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
     padding: 1rem;
     text-align: center;
-    border-bottom: 5px solid #61dafb; /* Línea de neón */
-    font-family: "Press Start 2P", cursive; /* Fuente retro */
+    border-bottom: 5px solid #444; /* Línea más seria */
+    font-family: "Georgia", serif; /* Fuente más seria y retro */
 }
 
 .Header nav ul {
@@ -20,8 +20,8 @@
 }
 
 .Header nav ul li a {
-    color: #ff00ff; /* Color vibrante */
+    color: #ffcc00; /* Color más serio y retro */
     text-decoration: none;
-    text-shadow: 0 0 5px #ff00ff; /* Efecto de neón */
+    text-shadow: none; /* Sin efecto de neón */
     font-size: 1.2rem; /* Tamaño de fuente más grande */
 }
