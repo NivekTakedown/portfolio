@@ -3,7 +3,7 @@
     max-width: 800px; /* Ancho máximo del contenido */
     margin: 0 auto; /* Centrar el contenido */
     text-align: left; /* Alinear el texto a la izquierda */
-    margin-bottom: 12rem; /* Espacio adicional para el footer */
+    margin-bottom: 5%; /* Espacio adicional para el footer */
 }
 
 .Home h1,

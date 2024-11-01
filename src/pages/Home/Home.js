@@ -1,47 +1,70 @@
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import "./Home.css";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import ProjectCard from "../../components/ProjectCard";
+import {
+  parseProjects,
+  generateClassName,
+  getTextFromChildren,
+} from "../../utils";
 
 function Home() {
+  const location = useLocation();
   const [content, setContent] = useState("");
   const [projects, setProjects] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Fetch the content of home.md
-    fetch("/home.md")
-      .then((response) => response.text())
-      .then((text) => {
-        const { modifiedContent, parsedProjects } = parseProjects(text);
+    const fetchData = async () => {
+      try {
+        // Fetch markdown content
+        const mdResponse = await fetch("/home.md");
+        const mdText = await mdResponse.text();
+        const { modifiedContent, parsedProjects } = parseProjects(mdText);
         setContent(modifiedContent);
         setProjects(parsedProjects);
-      });
 
-    // Fetch the list of projects from projects.json
-    fetch("/projects.json")
-      .then((response) => response.json())
-      .then((data) => {
-        setProjects(data);
-      });
-  }, []);
+        // Fetch projects data
+        const projectsResponse = await fetch("/projects.json");
+        const projectsData = await projectsResponse.json();
+        setProjects(projectsData);
 
-  const parseProjects = (markdown) => {
-    const projectRegex = /### \[(.*?)\]\((.*?)\)\n(.*?)(?=\n### |\n## |\n$)/gs;
-    const matches = [...markdown.matchAll(projectRegex)];
-    const parsedProjects = matches.map((match) => ({
-      title: match[1],
-      link: match[2],
-      description: match[3].trim(),
-    }));
+        setIsLoading(false);
 
-    // Eliminar los proyectos del contenido original
-    const modifiedContent = markdown.replace(projectRegex, "");
+        // Handle scroll after content is loaded
+        if (location.state?.sectionId) {
+          setTimeout(() => {
+            const element = document.getElementById(location.state.sectionId);
+            if (element) {
+              element.scrollIntoView({ behavior: "smooth" });
+              window.history.replaceState({}, document.title);
+            }
+          }, 100);
+        }
+      } catch (error) {
+        console.error("Error loading content:", error);
+        setIsLoading(false);
+      }
+    };
 
-    return { modifiedContent, parsedProjects };
-  };
+    fetchData();
+  }, [location.state]);
+
+  if (isLoading) {
+    return (
+      <div className="Home">
+        <Header />
+        <main>
+          <div className="loading">Loading...</div>
+        </main>
+        <Footer />
+      </div>
+    );
+  }
 
   return (
     <div className="Home">
@@ -51,25 +74,37 @@ function Home() {
           children={content}
           remarkPlugins={[remarkGfm]}
           components={{
-            h2: ({ node, ...props }) => {
-              if (props.children === "Personal Projects") {
+            h2: ({ node, children, ...props }) => {
+              const headingText = getTextFromChildren(children);
+              const className = generateClassName(headingText);
+              const id = className;
+
+              // Si es la sección de proyectos
+              if (headingText.toLowerCase().includes("projects")) {
                 return (
-                  <section id="projects">
-                    <h2 {...props} />
-                    {projects.map((project, index) => (
-                      <ProjectCard
-                        key={index}
-                        title={project.title}
-                        description={project.description}
-                        repoLink={project["repo-link"]}
-                        previewLink={project["preview-link"]}
-                        link={`/projects/${project.name}`}
-                      />
-                    ))}
+                  <section id={id} className={className}>
+                    <h2 {...props}>{children}</h2>
+                    <div className="projects-grid">
+                      {projects.map((project, index) => (
+                        <ProjectCard
+                          key={index}
+                          title={project.title}
+                          description={project.description}
+                          repoLink={project["repo-link"]}
+                          previewLink={project["preview-link"]}
+                          link={`/projects/${project.name}`}
+                        />
+                      ))}
+                    </div>
                   </section>
                 );
               }
-              return <h2 {...props} />;
+
+              return (
+                <section id={id} className={className}>
+                  <h2 {...props}>{children}</h2>
+                </section>
+              );
             },
           }}
         />

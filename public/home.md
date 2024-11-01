@@ -35,7 +35,7 @@ Systems Engineer focused on back-end development, with experience in SQL, agile 
   * Implemented unit testing and error handling, achieving 95% code coverage.
   * Collaborated in a team of 3 developers, delivering 2 major feature releases ahead of schedule.
 
-## Personal Projects
+## **Projects**
 
 ### [HTML to JSON Blocks Library](https://github.com/NivekTakedown/html-to-json-blocks)
 Developed a Python library to convert HTML content into structured JSON blocks. Implemented a modular design with custom image handling capabilities.
@@ -45,7 +45,6 @@ Marvel Comic Keeper is an application that seamlessly connects to the Marvel API
 
 ### [EasyCoffee](https://example.com/easy-coffee)
 The Easy Coffee App streamlines coffee plantation management for owners and workers. It facilitates registration of farm details, tracks production and sales, monitors inventory, records daily progress, and offers geospatial lot maps. This project was developed in collaboration with three other team members.
-
 
 ## **Languages**
 
