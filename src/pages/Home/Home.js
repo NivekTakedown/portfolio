@@ -22,14 +22,14 @@ function Home() {
     const fetchData = async () => {
       try {
         // Fetch markdown content
-        const mdResponse = await fetch("/home.md");
+        const mdResponse = await fetch("/portfolio/home.md");
         const mdText = await mdResponse.text();
         const { modifiedContent, parsedProjects } = parseProjects(mdText);
         setContent(modifiedContent);
         setProjects(parsedProjects);
 
         // Fetch projects data
-        const projectsResponse = await fetch("/projects.json");
+        const projectsResponse = await fetch("/portfolio/projects.json");
         const projectsData = await projectsResponse.json();
         setProjects(projectsData);
 

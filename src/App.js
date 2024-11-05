@@ -5,7 +5,7 @@ import ProjectDetail from "./pages/ProjectDetail";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/portfolio">
       <div>
         <Routes>
           <Route path="/" element={<Home />} />

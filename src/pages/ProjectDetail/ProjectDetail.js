@@ -18,7 +18,7 @@ function ProjectDetail() {
   const [manuals, setManuals] = useState([]);
 
   useEffect(() => {
-    fetch(`/projects/${projectName}.md`)
+    fetch(`/portfolio/projects/${projectName}.md`)
       .then((response) => response.text())
       .then((text) => {
         const { modifiedContent, previewLink, repoLink, manuals } =

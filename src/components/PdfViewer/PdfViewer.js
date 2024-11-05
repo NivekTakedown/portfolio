@@ -12,7 +12,7 @@ function PdfViewer({ manuals = [] }) {
           <div key={index} className="PdfViewer-manual">
             <h3>{manual.title}</h3>
             <iframe
-              src={`/manuals/${manual.fileName}`}
+              src={`/portfolio/manuals/${manual.fileName}`}
               title={manual.title}
               width="100%"
               height="600px"
