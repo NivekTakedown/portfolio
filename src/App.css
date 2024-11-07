@@ -1,8 +1,8 @@
 .App {
     text-align: center;
-    background-color: #2c2c2c; /* Fondo oscuro */
-    color: #e0e0e0; /* Texto claro */
-    font-family: "Georgia", serif; /* Fuente más seria y retro */
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+    font-family: "Georgia", serif;
 }
 
 .App-logo {
@@ -25,12 +25,12 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: #e0e0e0;
-    border-bottom: 5px solid #444; /* Línea más seria */
+    border-bottom: 5px solid #444;
 }
 
 .App-link {
-    color: #ffcc00; /* Color más serio y retro */
-    text-shadow: none; /* Sin efecto de neón */
+    color: #ffcc00;
+    text-shadow: none;
 }
 
 @keyframes App-logo-spin {
@@ -39,5 +39,12 @@
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+/* Media queries for mobile */
+@media (max-width: 768px) {
+    .App-header {
+        font-size: calc(8px + 2vmin);
     }
 }

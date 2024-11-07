@@ -1,9 +1,9 @@
 .ProjectDetail main {
     padding: 2rem;
-    max-width: 800px; /* Ancho máximo del contenido */
-    margin: 0 auto; /* Centrar el contenido */
-    text-align: left; /* Alinear el texto a la izquierda */
-    margin-bottom: 5%; /* Espacio adicional para el footer */
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 20%;
 }
 
 .ProjectDetail h1,
@@ -12,14 +12,14 @@
 .ProjectDetail h4,
 .ProjectDetail h5,
 .ProjectDetail h6 {
-    color: #ffcc00; /* Color más serio y retro */
-    text-shadow: none; /* Sin efecto de neón */
+    color: #ffcc00;
+    text-shadow: none;
 }
 
 .ProjectDetail p,
 .ProjectDetail ul,
 .ProjectDetail ol {
-    color: #e0e0e0; /* Texto claro */
+    color: #e0e0e0;
 }
 
 .ProjectDetail a {
@@ -28,7 +28,7 @@
 }
 
 .ProjectDetail a:hover {
-    text-shadow: none; /* Sin efecto de neón */
+    text-shadow: none;
 }
 
 .ProjectDetail iframe {
@@ -36,4 +36,15 @@
     height: 500px;
     border: none;
     margin-top: 1rem;
+}
+
+/* Media queries for mobile */
+@media (max-width: 768px) {
+    .ProjectDetail main {
+        padding: 1rem;
+    }
+
+    .ProjectDetail iframe {
+        height: 300px;
+    }
 }

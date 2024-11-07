@@ -3,7 +3,7 @@
     "name": "HTML-to-JSON-Blocks-Library",
     "title": "HTML to JSON Blocks Library",
     "repo-link": "https://github.com/NivekTakedown/html-to-json-blocks",
-    "preview-link": "https://pypi.org/project/html-to-json-blocks/",
+    "preview-link": "https://nivektakedown.github.io/showcase/",
     "description": "Developed a Python library to convert HTML content into structured JSON blocks. Implemented a modular design with custom image handling capabilities."
   },
   {

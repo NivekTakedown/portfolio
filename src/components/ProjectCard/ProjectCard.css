@@ -1,21 +1,29 @@
 .ProjectCard {
-    border: 1px solid #444; /* Borde más serio */
+    border: 1px solid #444;
     padding: 1rem;
     margin: 1rem;
     text-align: left;
-    background-color: #2c2c2c; /* Fondo oscuro */
-    color: #e0e0e0; /* Texto claro */
-    font-family: "Georgia", serif; /* Fuente más seria y retro */
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+    font-family: "Georgia", serif;
 }
 
 .ProjectCard h2 {
     margin-top: 0;
-    color: #ffcc00; /* Color más serio y retro */
-    text-shadow: none; /* Sin efecto de neón */
+    color: #ffcc00;
+    text-shadow: none;
 }
 
 .ProjectCard a {
-    color: #ffcc00; /* Color más serio y retro */
+    color: #ffcc00;
     text-decoration: none;
-    text-shadow: none; /* Sin efecto de neón */
+    text-shadow: none;
+}
+
+/* Media queries for mobile */
+@media (max-width: 768px) {
+    .ProjectCard {
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
 }

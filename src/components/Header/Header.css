@@ -3,8 +3,20 @@
     color: #e0e0e0;
     padding: 1rem;
     text-align: center;
-    border-bottom: 5px solid #444; /* Línea más seria */
-    font-family: "Georgia", serif; /* Fuente más seria y retro */
+    border-bottom: 5px solid #444;
+    font-family: "Georgia", serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header h1 {
+    margin: 0;
+}
+
+.Header nav {
+    display: flex;
+    align-items: center;
 }
 
 .Header nav ul {
@@ -16,12 +28,62 @@
 }
 
 .Header nav ul li {
-    margin: 0 1.5rem; /* Más espacio entre los elementos */
+    margin: 0 1.5rem;
 }
 
 .Header nav ul li a {
-    color: #ffcc00; /* Color más serio y retro */
+    color: #ffcc00;
     text-decoration: none;
-    text-shadow: none; /* Sin efecto de neón */
-    font-size: 1.2rem; /* Tamaño de fuente más grande */
+    text-shadow: none;
+    font-size: 1.2rem;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #ffcc00;
+}
+
+/* Media queries for mobile */
+@media (max-width: 768px) {
+    .Header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Header h1 {
+        margin-bottom: 0.5rem;
+    }
+
+    .Header nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Header nav ul {
+        flex-direction: column;
+        display: none; /* Hide the menu by default */
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .Header nav ul.show {
+        display: flex; /* Show the menu when toggled */
+    }
+
+    .Header nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .Header nav ul li a {
+        font-size: 1rem;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
 }

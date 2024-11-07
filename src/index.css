@@ -1,8 +1,8 @@
 body {
     margin: 0;
-    font-family: "Courier New", serif; /* Fuente más seria y retro */
-    background-color: #1a1a1a; /* Fondo oscuro */
-    color: #e0e0e0; /* Texto claro */
+    font-family: "Courier New", serif;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -13,5 +13,16 @@ code {
 }
 
 main {
-    margin-bottom: 4rem; /* Espacio adicional para el footer */
+    margin-bottom: 4rem;
+}
+
+/* Media queries for mobile */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    main {
+        margin-bottom: 6rem;
+    }
 }

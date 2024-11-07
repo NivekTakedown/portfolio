@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -29,9 +30,20 @@ function Header() {
 
   return (
     <header className="Header">
-      <h1>My Portfolio</h1>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          width: "100%",
+        }}
+      >
+        <h1>My Portfolio</h1>
+        <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+          ☰
+        </div>
+      </div>
       <nav>
-        <ul>
+        <ul className={menuOpen ? "show" : ""}>
           <li>
             <Link to="/">Home</Link>
           </li>
