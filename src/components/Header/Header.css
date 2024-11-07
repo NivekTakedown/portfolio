@@ -6,8 +6,12 @@
     border-bottom: 5px solid #444;
     font-family: "Georgia", serif;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center the header content horizontally */
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the header is above other content */
 }
 
 .Header h1 {
@@ -59,7 +63,7 @@
     .Header nav {
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
 
@@ -85,5 +89,13 @@
 
     .menu-toggle {
         display: block;
+        align-self: center; /* Center the menu toggle */
+    }
+
+    .Header .header-container {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        align-items: center;
     }
 }

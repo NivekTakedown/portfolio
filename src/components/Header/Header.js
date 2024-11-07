@@ -30,13 +30,7 @@ function Header() {
 
   return (
     <header className="Header">
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          width: "100%",
-        }}
-      >
+      <div className="header-container">
         <h1>My Portfolio</h1>
         <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
           ☰
