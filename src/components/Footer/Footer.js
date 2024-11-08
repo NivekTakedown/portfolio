@@ -19,7 +19,7 @@ function Footer() {
         </a>
         |
         <a
-          href="https://github.com/yourprofile"
+          href="https://github.com/NivekTakedown"
           target="_blank"
           rel="noopener noreferrer"
         >
