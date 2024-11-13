@@ -25,12 +25,12 @@ Systems Engineer focused on back-end development, with experience in SQL, agile 
 ## **Experience**
 
 * **Software Developer | [LAB101](https://www.linkedin.com/company/lab101-unal/) | Bogotá, Colombia | 11/2023 – Present**
-  * Designed a Django and MongoDB-based application for Findeter, implementing the core debt capacity calculation feature.
+  * Participated in the development of a Django and MongoDB-based application for Findeter, implementing the core debt capacity calculation feature.
   * Created a Python web scraping algorithm, reducing data migration time from two weeks to 39 minutes.
-  * Leading the development of a Strapi search plugin using Node.js and Elasticsearch.
+  * Participated in the development of a Strapi search plugin using Node.js and Elasticsearch.
   * Implemented a CI pipeline with GitHub Actions for detecting critical changes.
 
-* **Development Analyst | Innovbo Group | Bogotá, Colombia | 04/2024 – 08/2024**
+* **Development Analyst | [Innovbo Group](https://www.linkedin.com/company/innovbo-group/) | Bogotá, Colombia | 04/2024 – 08/2024**
   * Developed a Java and Firebase microservice for transport load recommendations.
   * Implemented unit testing and error handling, achieving 95% code coverage.
   * Collaborated in a team of 3 developers, delivering 2 major feature releases ahead of schedule.
