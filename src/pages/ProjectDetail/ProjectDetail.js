@@ -16,18 +16,38 @@ function ProjectDetail() {
   const [previewLink, setPreviewLink] = useState("");
   const [repoLink, setRepoLink] = useState("");
   const [manuals, setManuals] = useState([]);
+  const [project, setProject] = useState(null);
 
   useEffect(() => {
-    fetch(`/portfolio/projects/${projectName}.md`)
-      .then((response) => response.text())
-      .then((text) => {
-        const { modifiedContent, previewLink, repoLink, manuals } =
-          parseContent(text);
+    const fetchProjectData = async () => {
+      try {
+        const response = await fetch("/portfolio/projects.json");
+        const projects = await response.json();
+        const project = projects.find(p => p.name === projectName);
+        if (project) {
+          setProject(project);
+          fetchProjectMarkdown(project);
+        }
+      } catch (error) {
+        console.error("Error loading project data:", error);
+      }
+    };
+
+    const fetchProjectMarkdown = async (project) => {
+      try {
+        const response = await fetch(`/portfolio/projects/${projectName}.md`);
+        const text = await response.text();
+        const { modifiedContent, previewLink, repoLink, manuals } = parseContent(text);
         setContent(modifiedContent);
-        setPreviewLink(previewLink);
-        setRepoLink(repoLink);
-        setManuals(manuals || []); // Asegurarse de que manuals sea un array
-      });
+        setPreviewLink(previewLink || project["preview-link"]);
+        setRepoLink(repoLink || project["repo-link"]);
+        setManuals(manuals || []);
+      } catch (error) {
+        console.error("Error loading project markdown:", error);
+      }
+    };
+
+    fetchProjectData();
   }, [projectName]);
 
   const parseContent = (markdown) => {
@@ -44,7 +64,6 @@ function ProjectDetail() {
       fileName: match[2],
     }));
 
-    // Eliminar las secciones de preview, repo y pdf del contenido original
     const modifiedContent = markdown
       .replace(previewRegex, "")
       .replace(repoRegex, "")
@@ -52,6 +71,18 @@ function ProjectDetail() {
 
     return { modifiedContent, previewLink, repoLink, manuals };
   };
+
+  if (!project) {
+    return (
+      <div className="ProjectDetail">
+        <Header />
+        <main>
+          <div className="loading">Loading...</div>
+        </main>
+        <Footer />
+      </div>
+    );
+  }
 
   return (
     <div className="ProjectDetail">
