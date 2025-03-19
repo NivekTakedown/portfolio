@@ -9,6 +9,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import IframeViewer from "../../components/IframeViewer";
 import PdfViewer from "../../components/PdfViewer";
+import YoutubeViewer from "../../components/YoutubeViewer";
 
 function ProjectDetail() {
   const { projectName } = useParams();
@@ -17,6 +18,7 @@ function ProjectDetail() {
   const [repoLink, setRepoLink] = useState("");
   const [manuals, setManuals] = useState([]);
   const [project, setProject] = useState(null);
+  const [videoId, setVideoId] = useState("");
 
   useEffect(() => {
     const fetchProjectData = async () => {
@@ -37,11 +39,12 @@ function ProjectDetail() {
       try {
         const response = await fetch(`/portfolio/projects/${projectName}.md`);
         const text = await response.text();
-        const { modifiedContent, previewLink, repoLink, manuals } = parseContent(text);
+        const { modifiedContent, previewLink, repoLink, manuals, videoId } = parseContent(text);
         setContent(modifiedContent);
         setPreviewLink(previewLink || project["preview-link"]);
         setRepoLink(repoLink || project["repo-link"]);
         setManuals(manuals || []);
+        setVideoId(videoId);
       } catch (error) {
         console.error("Error loading project markdown:", error);
       }
@@ -54,22 +57,26 @@ function ProjectDetail() {
     const previewRegex = /## Preview\s*\n\s*\[.*?\]\((.*?)\)/;
     const repoRegex = /## Repository\s*\n\s*\[.*?\]\((.*?)\)/;
     const pdfRegex = /\[(.*?)\]\((.*?\.pdf)\)/g;
+    const videoRegex = /video:https:\/\/youtu\.be\/(.*?)(?:\s|$)/;
     const previewMatch = markdown.match(previewRegex);
     const repoMatch = markdown.match(repoRegex);
     const pdfMatches = [...markdown.matchAll(pdfRegex)];
+    const videoMatch = markdown.match(videoRegex);
     const previewLink = previewMatch ? previewMatch[1] : "";
     const repoLink = repoMatch ? repoMatch[1] : "";
     const manuals = pdfMatches.map((match) => ({
       title: match[1],
       fileName: match[2],
     }));
+    const videoId = videoMatch ? videoMatch[1] : "";
 
     const modifiedContent = markdown
       .replace(previewRegex, "")
       .replace(repoRegex, "")
-      .replace(pdfRegex, "");
+      .replace(pdfRegex, "")
+      .replace(videoRegex, "");
 
-    return { modifiedContent, previewLink, repoLink, manuals };
+    return { modifiedContent, previewLink, repoLink, manuals, videoId };
   };
 
   if (!project) {
@@ -117,6 +124,7 @@ function ProjectDetail() {
         )}
         {previewLink && <IframeViewer link={previewLink} />}
         {manuals.length > 0 && <PdfViewer manuals={manuals} />}
+        {videoId && <YoutubeViewer videoId={videoId} />}
       </main>
       <Footer />
     </div>

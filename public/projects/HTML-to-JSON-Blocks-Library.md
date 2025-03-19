@@ -35,7 +35,7 @@ The HTML to JSON Blocks Library is designed to convert HTML content into a struc
 
   2. Alternatively, you can clone the repository and install the dependencies:
      ```bash
-     git clone https://github.com/yourusername/html-to-json-blocks.git
+     git clone https://github.com/NivekTakedown/html-to-json-blocks.git
      cd html-to-json-blocks
      pip install -r requirements.txt
      pip install .

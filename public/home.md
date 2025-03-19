@@ -37,6 +37,9 @@ Systems Engineer focused on back-end development, with experience in SQL, agile 
 
 ## **Projects**
 
+### [Cerberus Chatbot](https://github.com/NivekTakedown/poc-cerberus-chatbot)
+A real-time chatbot developed for the Universidad Nacional de Colombia using Django, Django Channels, and Langchain. The chatbot provides interactive responses to university-related queries through a React-based web interface.
+
 ### [HTML to JSON Blocks Library](https://github.com/NivekTakedown/html-to-json-blocks)
 Developed a Python library to convert HTML content into structured JSON blocks. Implemented a modular design with custom image handling capabilities.
 
