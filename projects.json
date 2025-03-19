@@ -1,23 +1,23 @@
 [
   {
+    "name": "cerberus-chatbot",
+    "title": "Cerberus Chatbot",
+    "description": "A real-time chatbot developed for the Universidad Nacional de Colombia using Django, Django Channels, and Langchain. The chatbot provides interactive responses to university-related queries through a React-based web interface.",
+    "repo-link": "https://github.com/NivekTakedown/poc-cerberus-chatbot",
+    "technologies": ["Python", "Django", "React", "WebSockets", "Langchain"]
+  },
+  {
+    "name": "BullSolve-A-Mathematical-Problem-Solving-Model",
+    "title": "BullSolve: Mathematical Problem Solver",
+    "description": "An AI-powered system that combines neural networks and LLaMA-3.1-8B to solve and explain mathematical problems with 85% accuracy in problem classification and step-by-step solutions.",
+    "repo-link": "https://huggingface.co/kramosl/bullsolve-math-problem-solver",
+    "technologies": ["Python", "PyTorch", "LLaMA", "Neural Networks", "NLP"]
+  },
+  {
     "name": "HTML-to-JSON-Blocks-Library",
     "title": "HTML to JSON Blocks Library",
     "repo-link": "https://github.com/NivekTakedown/html-to-json-blocks",
     "preview-link": "https://nivektakedown.github.io/showcase/",
     "description": "Developed a Python library to convert HTML content into structured JSON blocks. Implemented a modular design with custom image handling capabilities."
-  },
-  {
-    "name": "marvel-comic-keeper",
-    "title": "Marvel Comic Keeper",
-    "repo-link": "https://example.com/marvel-comic-keeper",
-    "preview-link": "https://example.com/marvel-comic-keeper",
-    "description": "Marvel Comic Keeper is an application that seamlessly connects to the Marvel API. Users can create accounts, explore Marvel comics, and effortlessly manage their favorites. Built with Express.js and React, along with MySQL for the database, it delivers a seamless and interactive user experience. Deployment is handled by Netlify for the frontend and Railway for the backend and database."
-  },
-  {
-    "name": "EasyCoffee",
-    "title": "EasyCoffee",
-    "repo-link": "https://github.com/NivekTakedown/marvel",
-    "preview-link": "https://marvelcomickeeper.netlify.app/",
-    "description": "The Easy Coffee App streamlines coffee plantation management for owners and workers. It facilitates registration of farm details, tracks production and sales, monitors inventory, records daily progress, and offers geospatial lot maps. This project was developed in collaboration with three other team members."
-  }
+  }  
 ]
