@@ -1,26 +1,26 @@
 # **Kevin Fabio Ramos López**
 
-Junior Software Developer | Problem-solving | Backend Development
+Software Developer | Problem-Solving | Backend Engineer | LLMs & AI Agent
 
 ## **Introduction**
 
-Systems Engineer focused on back-end development, with experience in SQL, agile methodologies, and Machine Learning. Known for strong problem-solving skills, quick learning, and adaptability. Committed to developing innovative projects, valuing teamwork and continuous improvement.
+Systems Engineer specialized in back-end development with over 1.5 years of experience. Skilled in SQL, agile methodologies, machine learning, and fine-tuning with advanced LLMs. Proficient in managing LLMs, LLM-based agents, Llama Index, Langchain, and Unsloth for fine-tuning. Recognized for strong problem-solving abilities, rapid learning, and adaptability. Committed to developing innovative projects, valuing teamwork and continuous improvement.
 
 ## **Skills**
 
-- **Languages:** Python, Java, SQL (MySQL), JavaScript
+- **Languages:** Python, Java, SQL (MySQL), JavaScript, TypeScript
 - **Databases:** MongoDB, Elasticsearch, Firebase
 - **Version Control:** Git
 - **CI/CD:** GitHub Actions
-- **Frameworks:** Django, Node.js, Spring Boot
-- **Methodologies:** Agile (Scrum), TDD
+- **Frameworks:** Django, Node.js, Spring Boot, Langchaing, LlamaIndex
+- **Methodologies:** Agile (Scrum)
 
 ## **Education**
 
-- **Bachelor's Degree in Systems and Computer Engineering** (Expected Graduation: June 2025)
+- **Bachelor's Degree in Systems and Computer Engineering** (June 2025)
   - National University of Colombia, Bogotá
-  - Relevant coursework: Algorithms, Parallel and Distributed Computing, Machine Learning, Software Engineering
-  - GPA: 3.8/5.0
+  - Relevant coursework: Neural Netwoks, Parallel and Distributed Computing, Machine Learning, Software Engineering, Infrastructure Architecture & ICT Governance
+  - GPA: 3.9/5.0
 
 ## **Experience**
 
@@ -29,6 +29,9 @@ Systems Engineer focused on back-end development, with experience in SQL, agile 
   * Created a Python web scraping algorithm, reducing data migration time from two weeks to 39 minutes.
   * Participated in the development of a Strapi search plugin using Node.js and Elasticsearch.
   * Implemented a CI pipeline with GitHub Actions for detecting critical changes.
+  * Engineered an SSO Strapi plugin for the internal platform, enabling seamless editing of visual assets directly from the Strapi menu to streamline content management workflows.
+
+
 
 * **Development Analyst | [Innovbo Group](https://www.linkedin.com/company/innovbo-group/) | Bogotá, Colombia | 04/2024 – 08/2024**
   * Developed a Java and Firebase microservice for transport load recommendations.
@@ -37,22 +40,12 @@ Systems Engineer focused on back-end development, with experience in SQL, agile 
 
 ## **Projects**
 
-### [Cerberus Chatbot](https://github.com/NivekTakedown/poc-cerberus-chatbot)
-A real-time chatbot developed for the Universidad Nacional de Colombia using Django, Django Channels, and Langchain. The chatbot provides interactive responses to university-related queries through a React-based web interface.
 
-### [HTML to JSON Blocks Library](https://github.com/NivekTakedown/html-to-json-blocks)
-Developed a Python library to convert HTML content into structured JSON blocks. Implemented a modular design with custom image handling capabilities.
-
-### [Marvel Comic Keeper](https://example.com/marvel-comic-keeper)
-Marvel Comic Keeper is an application that seamlessly connects to the Marvel API. Users can create accounts, explore Marvel comics, and effortlessly manage their favorites. Built with Express.js and React, along with MySQL for the database, it delivers a seamless and interactive user experience. Deployment is handled by Netlify for the frontend and Railway for the backend and database.
-
-### [EasyCoffee](https://example.com/easy-coffee)
-The Easy Coffee App streamlines coffee plantation management for owners and workers. It facilitates registration of farm details, tracks production and sales, monitors inventory, records daily progress, and offers geospatial lot maps. This project was developed in collaboration with three other team members.
 
 ## **Languages**
 
 - **Spanish:** Native proficiency
-- **English:** Professional working proficiency (B1)
+- **English:** Professional working proficiency (B2)
 
 ## **Contact**
 
@@ -60,5 +53,5 @@ If you're interested in collaborating or just want to say hi, I'd love to hear f
 
 - Email: [kevinframosl@gmail.com](mailto:kevinframosl@gmail.com)
 - Phone: +57 313 285 90 51
-- LinkedIn: [Kevin Fabio Ramos Lopez](https://www.linkedin.com/in/kevin-fabio-ramos-lopez-300401250)
+- LinkedIn: [Kevin Fabio Ramos Lopez](https://www.linkedin.com/in/kevin-fabio-ramos-lopez)
 - GitHub: [GitHub Profile](https://github.com/NivekTakedown)

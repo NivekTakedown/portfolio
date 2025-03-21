@@ -10,14 +10,15 @@
     "name": "BullSolve-A-Mathematical-Problem-Solving-Model",
     "title": "BullSolve: Mathematical Problem Solver",
     "description": "An AI-powered system that combines neural networks and LLaMA-3.1-8B to solve and explain mathematical problems with 85% accuracy in problem classification and step-by-step solutions.",
-    "repo-link": "https://huggingface.co/kramosl/bullsolve-math-problem-solver",
-    "technologies": ["Python", "PyTorch", "LLaMA", "Neural Networks", "NLP"]
+    "repo-link": "https://colab.research.google.com/drive/1UBjvGiqf58bBtX2OANaNtJtQI-RGWqhq?usp=sharing#scrollTo=YWHIx3TPdZYi",
+    "model-link": "https://huggingface.co/kramosl/bullsolve-math-problem-solver",
+    "technologies": ["Python", "PyTorch", "LLaMA", "Neural Networks", "NLP","Unsloth"]
   },
   {
     "name": "HTML-to-JSON-Blocks-Library",
     "title": "HTML to JSON Blocks Library",
     "repo-link": "https://github.com/NivekTakedown/html-to-json-blocks",
-    "preview-link": "https://nivektakedown.github.io/showcase/",
-    "description": "Developed a Python library to convert HTML content into structured JSON blocks. Implemented a modular design with custom image handling capabilities."
+    "description": "Developed a Python library to convert HTML content into structured JSON blocks. Implemented a modular design with custom image handling capabilities.",
+    "technologies": ["Python", "HTML", "JSON"]
   }  
 ]
