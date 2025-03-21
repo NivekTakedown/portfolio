@@ -5,7 +5,7 @@ import remarkGfm from "remark-gfm";
 import "./Home.css";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import ProjectCard from "../../components/ProjectCard";
+import ProjectsList from "../../components/ProjectsList";
 import {
   parseProjects,
   generateClassName,
@@ -79,23 +79,11 @@ function Home() {
               const className = generateClassName(headingText);
               const id = className;
 
-              // Si es la sección de proyectos
               if (headingText.toLowerCase().includes("projects")) {
                 return (
                   <section id={id} className={className}>
                     <h2 {...props}>{children}</h2>
-                    <div className="projects-grid">
-                      {projects.map((project, index) => (
-                        <ProjectCard
-                          key={index}
-                          title={project.title}
-                          description={project.description}
-                          repoLink={project["repo-link"]}
-                          previewLink={project["preview-link"]}
-                          link={`/projects/${project.name}`}
-                        />
-                      ))}
-                    </div>
+                    <ProjectsList projects={projects} />
                   </section>
                 );
               }

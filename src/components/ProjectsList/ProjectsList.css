@@ -1,0 +1,16 @@
+.projects-grid {
+    display: grid;
+    
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0.5rem;
+    }
+}
