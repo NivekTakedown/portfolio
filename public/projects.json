@@ -12,7 +12,7 @@
     "title": "BullSolve: Mathematical Problem Solver",
     "description": "An AI-powered system that combines neural networks and LLaMA-3.1-8B to solve and explain mathematical problems with 85% accuracy in problem classification and step-by-step solutions.",
     "repo-link": "https://colab.research.google.com/drive/1UBjvGiqf58bBtX2OANaNtJtQI-RGWqhq?usp=sharing#scrollTo=YWHIx3TPdZYi",
-    "model-link": "https://huggingface.co/kramosl/bullsolve-math-problem-solver",
+    "model-link": "https://huggingface.co/nivektk/BullSolve",
     "youtube-link": "https://youtu.be/bE5qk9Pz1jo",
     "technologies": ["Python", "PyTorch", "LLaMA", "Neural Networks", "NLP","Unsloth"]
   },
