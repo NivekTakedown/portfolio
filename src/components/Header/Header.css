@@ -12,6 +12,7 @@
     top: 0;
     width: 100%;
     z-index: 1000; /* Ensure the header is above other content */
+    height: 40px; /* Altura fija para el header */
 }
 
 .Header h1 {

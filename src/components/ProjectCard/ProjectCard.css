@@ -2,16 +2,20 @@
     background-color: #1a1a1a;
     padding: 2rem;
     border-radius: 8px;
-    transition: transform 0.3s ease;
     border: 1px solid #333;
     margin-bottom: 2rem;
     text-align: left;
     color: #e0e0e0;
     font-family: "Georgia", serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
 }
 
 .ProjectCard:hover {
     transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-color: #444;
 }
 
 .ProjectCard h2 {
@@ -54,6 +58,14 @@
     font-size: 0.9rem;
     color: #e0e0e0;
     margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.ProjectCard .technologies li:hover {
+    background-color: #333;
+    border-color: #444;
+    transform: translateY(-1px);
 }
 
 .ProjectCard .links {
@@ -64,20 +76,46 @@
     margin-top: 1.5rem;
 }
 
-.ProjectCard .links a {
+/* Links y botones styling */
+.ProjectCard .links a, 
+.ProjectCard button.demo-link {
     color: #ffcc00;
     text-decoration: none;
     padding: 0.5rem 1rem;
     border: 1px solid #ffcc00;
     text-align: center;
     background-color: transparent;
-    transition: background-color 0.2s;
+    transition: all 0.3s ease;
     flex: 1;
     min-width: 120px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
 }
 
-.ProjectCard .links a:hover {
+.ProjectCard .links a:hover, 
+.ProjectCard button.demo-link:hover {
+    background-color: rgba(255, 204, 0, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(255, 204, 0, 0.2);
+}
+
+.ProjectCard .links a:active, 
+.ProjectCard button.demo-link:active {
+    transform: translateY(1px);
+    box-shadow: none;
+    background-color: rgba(255, 204, 0, 0.2);
+}
+
+.ProjectCard .links .demo-link {
     background-color: #2c2c2c;
+    border-color: #ff0000;
+    color: #ff0000;
+}
+
+.ProjectCard .links .demo-link:hover {
+    background-color: rgba(255, 0, 0, 0.1);
 }
 
 .ProjectCard .details-link {
@@ -86,17 +124,67 @@
     border: 1px solid #ffcc00;
 }
 
+/* Demo button específico */
+.ProjectCard button.demo-link {
+    border: 2px solid #ff0000;
+    color: #ff0000;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.ProjectCard button.demo-link:hover {
+    background-color: rgba(255, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(255, 0, 0, 0.2);
+}
+
+.ProjectCard button.demo-link:active {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+/* Video container styles */
+.ProjectCard .youtube-viewer {
+    margin: 1rem 0;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #000;
+}
+
+.ProjectCard .youtube-viewer iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
 @media (max-width: 768px) {
     .ProjectCard {
         padding: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
     .ProjectCard .links {
         flex-direction: column;
     }
 
-    .ProjectCard .links a {
+    .ProjectCard .links a,
+    .ProjectCard button.demo-link {
         width: 100%;
+    }
+
+    .ProjectCard .youtube-viewer {
+        margin: 0.8rem 0;
+    }
+
+    .projects-grid {
+        padding-bottom: 100px; /* Más espacio en móvil */
+        padding-top: 100px;
     }
 }
 
@@ -108,4 +196,14 @@
     .ProjectCard .links a {
         width: 100%;
     }
+
+    .ProjectCard .youtube-viewer {
+        margin: 0.5rem 0;
+    }
+}
+
+/* Ajusta el contenedor principal */
+.projects-grid {
+    padding-bottom: 80px; /* Espacio para el footer */
+    padding-top: 80px; /* Espacio para el header */
 }

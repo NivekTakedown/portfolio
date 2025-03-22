@@ -13,6 +13,7 @@ function ProjectsList({ projects }) {
           repoLink={project["repo-link"]}
           previewLink={project["preview-link"]}
           modelLink={project["model-link"]}
+          youtubeLink={project["youtube-link"]}
           technologies={project.technologies}
           link={`/projects/${project.name}`}
         />

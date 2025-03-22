@@ -2,12 +2,15 @@
     background-color: #1a1a1a;
     color: #e0e0e0;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 1rem;
     position: fixed;
     width: 100%;
     bottom: 0;
+    left: 0;
     border-top: 5px solid #444;
     font-family: "Georgia", serif;
+    z-index: 1000;
+    height: 60px; /* Altura fija para el footer */
 }
 
 .logo {
