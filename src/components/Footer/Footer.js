@@ -10,7 +10,7 @@ function Footer() {
       <p>
         Follow me on:
         <a
-          href="https://www.linkedin.com/in/kevin-fabio-ramos-lopez-300401250/"
+          href="https://www.linkedin.com/in/kevin-fabio-ramos-lopez"
           target="_blank"
           rel="noopener noreferrer"
         >

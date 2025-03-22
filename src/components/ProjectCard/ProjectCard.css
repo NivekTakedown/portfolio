@@ -74,6 +74,7 @@
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: 1.5rem;
+    width: 100%;
 }
 
 /* Links y botones styling */
@@ -88,10 +89,12 @@
     transition: all 0.3s ease;
     flex: 1;
     min-width: 120px;
+    max-width: calc(50% - 0.5rem); /* Ajuste para evitar desbordamiento */
     position: relative;
     overflow: hidden;
     z-index: 1;
     cursor: pointer;
+    box-sizing: border-box; /* Asegura que padding y border se incluyan en el ancho */
 }
 
 .ProjectCard .links a:hover, 
@@ -171,11 +174,16 @@
 
     .ProjectCard .links {
         flex-direction: column;
+        align-items: stretch; /* Asegura que los botones ocupen todo el ancho */
+        width: 100%;
     }
 
     .ProjectCard .links a,
     .ProjectCard button.demo-link {
         width: 100%;
+        max-width: 100%; /* Permite que ocupe todo el ancho en móvil */
+        margin: 0.25rem 0;
+        box-sizing: border-box;
     }
 
     .ProjectCard .youtube-viewer {

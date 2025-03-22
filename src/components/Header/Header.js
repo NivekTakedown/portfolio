@@ -9,13 +9,14 @@ function Header() {
 
   const handleNavigation = (event, sectionId) => {
     event.preventDefault();
+    setMenuOpen(false); // Cierra el menú después de la navegación
 
     if (location.pathname !== "/") {
       navigate("/", { state: { sectionId } });
     } else {
       const element = document.getElementById(sectionId);
       if (element) {
-        const headerHeight = document.querySelector('.Header').offsetHeight;
+        const headerHeight = 60; // Altura fija del header
         const elementPosition = element.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
 
@@ -39,24 +40,28 @@ function Header() {
     <header className="Header">
       <div className="header-container">
         <h1>My Portfolio</h1>
-        <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+        <button 
+          className="menu-toggle" 
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
           ☰
-        </div>
-      </div>
-      <nav>
-        <ul className={menuOpen ? "show" : ""}>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          {sections.map(({ id, label }) => (
-            <li key={id}>
-              <a href={`#${id}`} onClick={(e) => handleNavigation(e, id)}>
-                {label}
-              </a>
+        </button>
+        <nav className={menuOpen ? "show" : ""}>
+          <ul>
+            <li>
+              <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
             </li>
-          ))}
-        </ul>
-      </nav>
+            {sections.map(({ id, label }) => (
+              <li key={id}>
+                <a href={`#${id}`} onClick={(e) => handleNavigation(e, id)}>
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 }
