@@ -66,7 +66,7 @@ video:https://youtu.be/bE5qk9Pz1jo
 
 The BullSolve model is available for testing on Hugging Face. You can access the model through the following resources:
 
-* [BullSolve Model](https://huggingface.co/kramosl/bullsolve-math-problem-solver)
+* [BullSolve Model](https://huggingface.co/nivektk/BullSolve)
 * [Math-augmented-dataset](https://kaggle.com/dataset/math-augmented)
 * [Colab](https://colab.research.google.com/drive/1UBjvGiqf58bBtX2OANaNtJtQI-RGWqhq?usp=sharing#scrollTo=YWHIx3TPdZYi)
 
