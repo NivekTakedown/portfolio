@@ -1,10 +1,10 @@
 # **Kevin Fabio Ramos López**
 
-Software Developer | Problem-Solving | Backend Engineer | LLMs & AI Agent
+Software Developer | Problem-Solving | LLMs & AI Agent
 
 ## **Introduction**
 
-Systems Engineer specialized in back-end development with over 1.5 years of experience. Skilled in SQL, agile methodologies, machine learning, and fine-tuning with advanced LLMs. Proficient in managing LLMs, LLM-based agents, Llama Index, Langchain, and Unsloth for fine-tuning. Recognized for strong problem-solving abilities, rapid learning, and adaptability. Committed to developing innovative projects, valuing teamwork and continuous improvement.
+Systems Engineer with over 1.5 years of experience, skilled in SQL, agile methodologies, and machine learning. Experienced in fine-tuning advanced LLMs, managing LLMs and LLM-based agents, and leveraging tools such as Llama Index, Langchain, and Unsloth. Recognized for strong problem-solving abilities, rapid learning, and adaptability, I am committed to developing innovative projects that emphasize teamwork and continuous improvement.
 
 ## **Skills**
 
@@ -13,6 +13,7 @@ Systems Engineer specialized in back-end development with over 1.5 years of expe
 - **Version Control:** Git
 - **CI/CD:** GitHub Actions
 - **Frameworks:** Django, Node.js, Spring Boot, Langchaing, LlamaIndex
+- **Others:** Unsloth
 - **Methodologies:** Agile (Scrum)
 
 ## **Education**
