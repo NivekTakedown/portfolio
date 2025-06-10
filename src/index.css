@@ -1,15 +1,21 @@
+@import './styles/variables.css';
+
 body {
     margin: 0;
-    font-family: "Courier New", serif;
-    background-color: #1a1a1a;
-    color: #e0e0e0;
+    font-family: var(--font-family);
+    background: var(--bg-primary);
+    color: var(--text-primary);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
+    font-family: var(--font-mono);
+    background: var(--bg-card);
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    color: var(--text-secondary);
 }
 
 main {

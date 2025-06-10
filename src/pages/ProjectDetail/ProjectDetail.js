@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import "./ProjectDetail.css";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -104,7 +104,7 @@ function ProjectDetail() {
               return !inline && match ? (
                 <SyntaxHighlighter
                   children={String(children).replace(/\n$/, "")}
-                  style={dark}
+                  style={oneDark}
                   language={match[1]}
                   PreTag="div"
                   {...props}

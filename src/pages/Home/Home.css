@@ -1,10 +1,12 @@
+@import '../../styles/variables.css';
+
 .Home main {
     padding: 2rem;
     max-width: 1000px;
     margin: 0 auto;
     text-align: left;
-    padding-top: 80px; /* Espacio para el header */
-    padding-bottom: 80px; /* Espacio para el footer */
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .Home h1,
@@ -13,22 +15,27 @@
 .Home h4,
 .Home h5,
 .Home h6 {
-    color: #ffcc00;
+    color: var(--text-muted);
     text-shadow: none;
+    font-weight: 600;
 }
 
 .Home p,
 .Home ul,
 .Home ol {
-    color: #e0e0e0;
+    color: var(--text-tertiary);
+    line-height: 1.6;
+    opacity: 0.9;
 }
 
 .Home a {
-    color: #ffcc00;
+    color: var(--text-link);
     text-decoration: none;
+    transition: color var(--transition-fast);
 }
 
 .Home a:hover {
+    color: var(--text-link-hover);
     text-shadow: none;
 }
 
@@ -36,7 +43,7 @@
 @media (max-width: 768px) {
     .Home main {
         padding: 1rem;
-        padding-top: 100px; /* Más espacio en móvil */
+        padding-top: 100px;
         padding-bottom: 100px;
     }
 }
@@ -47,7 +54,7 @@
     margin: 0 auto;
     text-align: left;
     margin-bottom: 5%;
-    margin-top: 5rem; /* Add margin-top to avoid overlap with fixed header */
+    margin-top: 5rem;
 }
 
 .ProjectDetail h1,
@@ -56,22 +63,27 @@
 .ProjectDetail h4,
 .ProjectDetail h5,
 .ProjectDetail h6 {
-    color: #ffcc00;
+    color: var(--text-muted);
     text-shadow: none;
+    font-weight: 600;
 }
 
 .ProjectDetail p,
 .ProjectDetail ul,
 .ProjectDetail ol {
-    color: #e0e0e0;
+    color: var(--text-tertiary);
+    line-height: 1.6;
+    opacity: 0.9;
 }
 
 .ProjectDetail a {
-    color: #ffcc00;
+    color: var(--text-muted);
     text-decoration: none;
+    transition: color var(--transition-fast);
 }
 
 .ProjectDetail a:hover {
+    color: var(--text-primary);
     text-shadow: none;
 }
 
@@ -80,13 +92,15 @@
     height: 500px;
     border: none;
     margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-heavy);
 }
 
 /* Media queries for mobile */
 @media (max-width: 768px) {
     .ProjectDetail main {
         padding: 1rem;
-        margin-top: 6rem; /* Adjust margin-top for mobile */
+        margin-top: 6rem;
     }
 
     .ProjectDetail iframe {
@@ -95,12 +109,12 @@
 }
 
 section {
-    scroll-margin-top: 60px; /* Ajusta este valor según la altura de tu header */
+    scroll-margin-top: 60px;
     padding-top: 1rem;
 }
 
 @media (max-width: 768px) {
     section {
-        scroll-margin-top: 80px; /* Más espacio para móviles */
+        scroll-margin-top: 80px;
     }
 }

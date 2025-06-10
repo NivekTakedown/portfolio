@@ -4,7 +4,7 @@ Software Developer | Problem-Solving | LLMs & AI Agent
 
 ## **Introduction**
 
-Systems Engineer with over 1.5 years of experience, skilled in SQL, agile methodologies, and machine learning. Experienced in fine-tuning advanced LLMs, managing LLMs and LLM-based agents, and leveraging tools such as Llama Index, Langchain, and Unsloth. Recognized for strong problem-solving abilities, rapid learning, and adaptability, I am committed to developing innovative projects that emphasize teamwork and continuous improvement.
+Systems Engineer with over 2 years of experience, skilled in SQL, agile methodologies, and machine learning. Experienced in fine-tuning advanced LLMs, managing LLMs and LLM-based agents, and leveraging tools such as Llama Index, Langchain, and Unsloth. Recognized for strong problem-solving abilities, rapid learning, and adaptability, I am committed to developing innovative projects that emphasize teamwork and continuous improvement.
 
 ## **Skills**
 

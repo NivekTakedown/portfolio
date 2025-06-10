@@ -1,8 +1,10 @@
+@import './styles/variables.css';
+
 .App {
     text-align: center;
-    background-color: #2c2c2c;
-    color: #e0e0e0;
-    font-family: "Georgia", serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-family);
 }
 
 .App-logo {
@@ -17,19 +19,19 @@
 }
 
 .App-header {
-    background-color: #1a1a1a;
+    background-color: var(--bg-overlay);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: #e0e0e0;
-    border-bottom: 5px solid #444;
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--border-primary);
 }
 
 .App-link {
-    color: #ffcc00;
+    color: var(--text-muted);
     text-shadow: none;
 }
 

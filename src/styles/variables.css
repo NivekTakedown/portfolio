@@ -1,0 +1,72 @@
+:root {
+    /* Main Background Colors */
+    --bg-primary: linear-gradient(135deg, #0d0d1f 0%, #13132b 50%, #1a1a40 100%);
+    --bg-secondary: #181826;
+    --bg-tertiary: #1f1f3a;
+  
+    /* Card and Component Backgrounds */
+    --bg-card: rgba(45, 55, 72, 0.4);
+    --bg-card-hover: rgba(45, 55, 72, 0.6);
+    --bg-overlay: rgba(0, 0, 0, 0.5);
+    --bg-overlay-light: rgba(15, 23, 42, 0.2);
+    --bg-header: rgba(24, 24, 38, 0.94);
+    --bg-footer: rgba(24, 24, 38, 0.94);
+  
+    /* Code Background - More contrast */
+    --bg-code: rgba(30, 41, 59, 0.95);
+    --text-code: #f8fafc;
+    --border-code: rgba(139, 92, 246, 0.5); /* violet accent */
+  
+    /* Text Colors */
+    --text-primary: #ffffff;
+    --text-secondary: #e2e8f0;
+    --text-tertiary: #cbd5e1;
+    --text-muted: #94a3b8;
+    --text-accent: #f472b6; /* hot pink accent */
+  
+    /* Interactive Colors - Cyan / Fuchsia / Violet */
+    --text-interactive: #22d3ee;
+    --text-interactive-hover: #a78bfa;
+    --text-link: #0ea5e9;
+    --text-link-hover: #8b5cf6;
+  
+    /* Border Colors */
+    --border-primary: rgba(255, 255, 255, 0.08);
+    --border-secondary: rgba(255, 255, 255, 0.15);
+    --border-accent: rgba(168, 85, 247, 0.4); /* vibrant violet */
+  
+    /* Interactive Element Backgrounds */
+    --interactive-bg: rgba(168, 85, 247, 0.08);
+    --interactive-bg-hover: rgba(236, 72, 153, 0.15);
+    --interactive-border: rgba(236, 72, 153, 0.4);
+    --interactive-border-hover: rgba(236, 72, 153, 0.7);
+  
+    /* Status Colors */
+    --success: #34d399;
+    --success-bg: rgba(52, 211, 153, 0.1);
+    --warning: #fbbf24;
+    --warning-bg: rgba(251, 191, 36, 0.12);
+    --error: #ef4444;
+    --error-bg: rgba(239, 68, 68, 0.12);
+  
+    /* Shadow Colors */
+    --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.3);
+    --shadow-medium: 0 10px 25px rgba(0, 0, 0, 0.5);
+    --shadow-heavy: 0 8px 20px rgba(0, 0, 0, 0.6);
+    --shadow-glow: 0 0 24px rgba(236, 72, 153, 0.4); /* glowing pink shadow */
+  
+    /* Typography */
+    --font-family: "Inter", "Segoe UI", sans-serif;
+    --font-mono: "JetBrains Mono", "Fira Code", Menlo, Consolas, monospace;
+  
+    /* Transitions */
+    --transition-fast: 0.2s ease-in-out;
+    --transition-medium: 0.3s ease-in-out;
+    --transition-slow: 0.6s ease-in-out;
+  
+    /* Blur Effects */
+    --blur-light: blur(6px);
+    --blur-medium: blur(10px);
+    --blur-heavy: blur(18px);
+  }
+  

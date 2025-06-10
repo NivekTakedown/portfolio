@@ -1,6 +1,7 @@
+@import '../../styles/variables.css';
+
 .projects-grid {
     display: grid;
-    
     gap: 2rem;
     max-width: 800px;
     margin: 0 auto;
