@@ -13,11 +13,10 @@
     position: relative;
     z-index: 1;
     backdrop-filter: var(--blur-medium);
-    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    transition: box-shadow var(--transition-fast), border-color var(--transition-fast);
 }
 
 .ProjectCard:hover {
-    transform: translateY(-5px);
     box-shadow: var(--shadow-medium);
     border-color: var(--border-secondary);
 }
@@ -72,7 +71,6 @@
 .ProjectCard .technologies li:hover {
     background: var(--interactive-bg-hover);
     border-color: var(--border-secondary);
-    transform: translateY(-1px);
 }
 
 .ProjectCard .links {
@@ -108,7 +106,6 @@
 .ProjectCard .links a:hover, 
 .ProjectCard button.demo-link:hover {
     background: var(--interactive-bg-hover);
-    transform: translateY(-2px);
     box-shadow: var(--shadow-light);
     color: var(--text-interactive-hover);
     border-color: var(--interactive-border-hover);
@@ -116,7 +113,6 @@
 
 .ProjectCard .links a:active, 
 .ProjectCard button.demo-link:active {
-    transform: translateY(1px);
     box-shadow: none;
     background: var(--interactive-bg-hover);
 }
