@@ -1,5 +1,3 @@
-# HTML to JSON Blocks Library
-
 The HTML to JSON Blocks Library is designed to convert HTML content into a structured JSON block format, making it useful for systems that need to transform web content into processable formats. It is highly customizable, allowing users to define their own image conversion methods through the use of abstract classes.
 
 ## **Key Features**

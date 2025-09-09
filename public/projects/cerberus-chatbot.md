@@ -1,5 +1,3 @@
-## **Cerberus Chatbot**
-
 Cerberus is a chatbot designed to provide information and answer questions related to the Universidad Nacional de Colombia. It offers a real-time, interactive experience for users seeking information about the university.
 
 *   The chatbot uses Django and Django Channels on the backend to handle real-time communication via WebSockets.
