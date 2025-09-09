@@ -8,7 +8,7 @@ Athenus is a chatbot-like application designed to deliver intelligent and engagi
 
 The system aims to redefine user interaction through seamless AI-powered conversations, providing not just responses but engaging and contextual dialogue.
 
-![athenus_logo](assets/athenus_logo.png "")
+![Athenus Logo](../athenus_logo.png)
 
 ## **Technical Description**
 
@@ -52,9 +52,22 @@ Universidad Nacional de Colombia
 1. **Clone the Repository**:
 ```bash
 git clone git@github.com:jdramosl/athenus.git
-````
+```
 
 2. **Install Dependencies** (Python/Django and Android Studio)
 3. **Run the Backend Server**
 4. **Launch the Android App**
+
+## **Research Paper**
+
+For detailed technical development, methodology, and results of the Athenus project, please refer to our comprehensive research paper:
+
+[Research Paper - Athenus Development and Results](../IEEE_LaTeX_Informe_Athenus.pdf)
+
+This document includes:
+* Detailed system architecture
+* Implementation methodology
+* Performance evaluation
+* Experimental results
+* Conclusions and future work
 

@@ -2,8 +2,9 @@
 
 .projects-grid {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 1rem 0;
 }
@@ -13,5 +14,13 @@
         grid-template-columns: 1fr;
         gap: 1.5rem;
         padding: 0.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0.25rem;
     }
 }
