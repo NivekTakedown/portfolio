@@ -22,5 +22,12 @@
     "repo-link": "https://github.com/NivekTakedown/html-to-json-blocks",
     "description": "Developed a Python library to convert HTML content into structured JSON blocks. Implemented a modular design with custom image handling capabilities.",
     "technologies": ["Python", "HTML", "JSON"]
-  }  
+  },
+  {
+    "name": "Athenus-assistant",
+    "title": "Athenus: Intelligent Conversational Assistant",
+    "description": "A chatbot-like application built with an Android frontend, a Django backend, and powered by Ollama and Mistral LLMs. Designed to deliver intelligent, seamless, and engaging AI-driven conversations.",
+    "repo-link": "https://github.com/jdramosl/athenus",
+    "technologies": ["Android", "Python", "Django", "Ollama", "Mistral", "LLMs"]
+  }
 ]
