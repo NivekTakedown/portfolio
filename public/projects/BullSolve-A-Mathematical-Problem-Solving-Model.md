@@ -1,5 +1,3 @@
-# **BullSolve: A Mathematical Problem Solving Model**
-
 BullSolve is an AI-powered system designed to solve mathematical problems through a dual methodology approach. It combines:
 
 * A shallow neural network that classifies mathematical problems by type

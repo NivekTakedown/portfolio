@@ -1,5 +1,3 @@
-# **Athenus: An Intelligent Conversational Assistant**
-
 Athenus is a chatbot-like application designed to deliver intelligent and engaging conversations. It combines:
 
 * An **Android frontend** for intuitive user interaction  
