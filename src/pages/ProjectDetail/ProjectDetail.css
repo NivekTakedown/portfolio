@@ -46,6 +46,21 @@
     box-shadow: var(--shadow-heavy);
 }
 
+/* Limitar el ancho de las imágenes en el markdown */
+.ProjectDetail .markdown-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow-light);
+}
+
+/* Para imágenes más pequeñas, limitar a un ancho máximo específico */
+.ProjectDetail .markdown-content img {
+    max-width: min(100%, 600px);
+}
+
 /* Media queries for mobile */
 @media (max-width: 768px) {
     .ProjectDetail main {
@@ -55,5 +70,10 @@
 
     .ProjectDetail iframe {
         height: 300px;
+    }
+
+    .ProjectDetail .markdown-content img {
+        max-width: 100%;
+        margin: 0.5rem auto;
     }
 }

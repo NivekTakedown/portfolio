@@ -95,36 +95,57 @@ function ProjectDetail() {
     <div className="ProjectDetail">
       <Header />
       <main>
-        <ReactMarkdown
-          children={content}
-          remarkPlugins={[remarkGfm]}
-          components={{
-            code({ node, inline, className, children, ...props }) {
-              const match = /language-(\w+)/.exec(className || "");
-              return !inline && match ? (
-                <SyntaxHighlighter
-                  children={String(children).replace(/\n$/, "")}
-                  style={oneDark}
-                  language={match[1]}
-                  PreTag="div"
-                  {...props}
-                />
-              ) : (
-                <code className={className} {...props}>
-                  {children}
-                </code>
-              );
-            },
-          }}
-        />
-        {repoLink && (
-          <a href={repoLink} target="_blank" rel="noopener noreferrer">
-            View Repository
-          </a>
-        )}
-        {previewLink && <IframeViewer link={previewLink} />}
-        {manuals.length > 0 && <PdfViewer manuals={manuals} />}
-        {videoId && <YoutubeViewer videoId={videoId} />}
+        <div className="project-detail-container">
+          <h1>{project.title}</h1>
+          <div className="markdown-content">
+            <ReactMarkdown
+              remarkPlugins={[remarkGfm]}
+              components={{
+                code({ node, inline, className, children, ...props }) {
+                  const match = /language-(\w+)/.exec(className || "");
+                  return !inline && match ? (
+                    <SyntaxHighlighter
+                      style={oneDark}
+                      language={match[1]}
+                      PreTag="div"
+                      {...props}
+                    >
+                      {String(children).replace(/\n$/, "")}
+                    </SyntaxHighlighter>
+                  ) : (
+                    <code className={className} {...props}>
+                      {children}
+                    </code>
+                  );
+                },
+                img({ node, ...props }) {
+                  return (
+                    // eslint-disable-next-line jsx-a11y/alt-text
+                    <img
+                      {...props}
+                      style={{
+                        maxWidth: '100%',
+                        height: 'auto',
+                        display: 'block',
+                        margin: '1rem auto'
+                      }}
+                    />
+                  );
+                }
+              }}
+            >
+              {content}
+            </ReactMarkdown>
+          </div>
+          {repoLink && (
+            <a href={repoLink} target="_blank" rel="noopener noreferrer">
+              View Repository
+            </a>
+          )}
+          {previewLink && <IframeViewer link={previewLink} />}
+          {manuals.length > 0 && <PdfViewer manuals={manuals} />}
+          {videoId && <YoutubeViewer videoId={videoId} />}
+        </div>
       </main>
       <Footer />
     </div>
