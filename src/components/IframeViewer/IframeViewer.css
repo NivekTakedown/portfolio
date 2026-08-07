@@ -1,13 +1,14 @@
 .IframeViewer {
-    border: 1px solid var(--border-primary);
+    border: 2px solid var(--border-secondary);
     padding: 1rem;
     margin: 1rem;
     background: var(--bg-card);
     color: var(--text-primary);
     font-family: var(--font-family);
     text-align: center;
-    border-radius: 10px;
+    border-radius: 0;
     backdrop-filter: var(--blur-medium);
+    box-shadow: var(--shadow-light);
 }
 
 .IframeViewer iframe {
@@ -15,7 +16,7 @@
     height: 500px;
     border: none;
     margin-top: 1rem;
-    border-radius: 8px;
+    border-radius: 0;
     box-shadow: var(--shadow-heavy);
 }
 
