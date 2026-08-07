@@ -40,9 +40,9 @@
 .ProjectDetail iframe {
     width: 100%;
     height: 500px;
-    border: none;
+    border: 2px solid var(--border-secondary);
     margin-top: 1rem;
-    border-radius: 8px;
+    border-radius: 0;
     box-shadow: var(--shadow-heavy);
 }
 
@@ -52,7 +52,8 @@
     height: auto;
     display: block;
     margin: 1rem auto;
-    border-radius: 8px;
+    border-radius: 0;
+    border: 2px solid var(--border-secondary);
     box-shadow: var(--shadow-light);
 }
 
