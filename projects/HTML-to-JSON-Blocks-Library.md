@@ -63,6 +63,10 @@ The HTML to JSON Blocks Library is designed to convert HTML content into a struc
      print(json_blocks)
      ```
 
+  ## Preview
+
+  [Try the live demo](https://html-to-json-blocks.netlify.app)
+
   ## Repository
 
   [View the repository](https://github.com/NivekTakedown/html-to-json-blocks)
